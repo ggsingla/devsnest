@@ -9,12 +9,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(253, 210, 255);
-  background: linear-gradient(
-    129deg,
-    rgba(253, 210, 255, 1) 0%,
-    rgba(235, 235, 235, 1) 77%
-  );
+  background: rgb(34,138,195);
+  background: linear-gradient(325deg, rgba(34,138,195,1) 29%, rgba(253,236,45,1) 100%);
+}
+h1{
+  font-size: 2.5rem;
+  line-height: 110%;
+}
+p,li{
+  font-size: 0.8rem;
 }
 .cointainer {
   background-color: white;
@@ -28,8 +31,58 @@ body {
   text-align: left;
   padding: 5% 6%;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.342);
-  user-select: none;
 }
+.top-wrapper{
+  display: flex;
+  width: 100%;
+  align-items: space-between;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.name{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact-details{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.details{
+  text-align: right;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  margin-left: 10%;
+}
+
+.icon{
+  transform: scale(120%);
+  color: rgb(54, 29, 78);
+}
+.description{
+  margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
   .cointainer {
     max-width: 70%;
