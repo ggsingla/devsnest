@@ -11,6 +11,7 @@ body {
   justify-content: center;
   background: rgb(34,138,195);
   background: linear-gradient(325deg, rgba(34,138,195,1) 29%, rgba(253,236,45,1) 100%);
+  overflow-x: hidden;
 }
 h1, h2, h3{
   color: #222;
@@ -71,6 +72,9 @@ span{
 .details{
   text-align: right;
 }
+.details p{
+  line-height: 23px;
+}
 .icons{
   display: flex;
   flex-direction: column;
@@ -112,13 +116,6 @@ span{
   margin-bottom: 0 ;
   text-decoration: underline;
 }
-
-
-
-
-
-
-
 
 
 
