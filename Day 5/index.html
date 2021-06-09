@@ -8,6 +8,21 @@
     <title>Day 5 Calculator</title>
 </head>
 <body>
-    <h1>Calculator</h1>
+    <div class="cointainer">
+        <h1>Calculator</h1>
+        <form action="#" method= "GET" id="form">
+            <label for="firstv" >First Value</label>
+            <input type="number" id="inputf">
+            <label for="secondv"> Second Value</label>
+            <input type="number" id="inputs">
+            <input type="submit" id="plus" value="+" onclick="add()">
+            <input type="submit" id="minus" value="-" onclick="sub()">
+            <input type="submit" id="pro" value="X" onclick="prod()">
+            <input type="submit" id="divide" value="/" onclick="div()">
+            <label for="answer">Final value</label>
+            <p id="answer">_answer</p>
+        </form>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
