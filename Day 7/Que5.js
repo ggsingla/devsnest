@@ -1,9 +1,11 @@
-//Doubt
+const Cylinder = class {
+  constructor(r, h) {
+    this.radius = r;
+    this.height = h;
+    this.Volume = (Math.PI * this.height * this.radius ** 2).toFixed(4);
+  }
+};
 
-let cylinder = {
-  radi: 5,
-  height: 70,
- 
-  };
-var  volume = (Math.PI * Math.pow(cylinder.radi,2) *cylinder.height)
-console.log("Volume of cylinder is " + volume.toFixed(4));
+let newCylinder = new Cylinder(3, 4);
+console.log();
+console.log(newCylinder.Volume);
