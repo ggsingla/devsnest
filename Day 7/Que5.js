@@ -1,9 +1,9 @@
-let cylinder = {
-rs: 5,
-ht:  70,
-  volume: function() {
-    console.log(Math.PI * rs * rs * ht);
-}
+//Doubt
 
-}
-console.log("volume of cylinder is" , cylinder);
+let cylinder = {
+  radi: 5,
+  height: 70,
+ 
+  };
+var  volume = (Math.PI * Math.pow(cylinder.radi,2) *cylinder.height)
+console.log("Volume of cylinder is " + volume.toFixed(4));

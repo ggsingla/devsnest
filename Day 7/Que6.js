@@ -8,6 +8,5 @@ var library = [
   },
 ];
 
-library.sort(function (a, b) {
- return a.libraryID - b.libraryID;
-});
+library.sort((a,b) => b.libraryID - a.libraryID)
+console.log(library);

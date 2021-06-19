@@ -1,21 +1,38 @@
-let book1 = {
-author: 'Bill Gates',
-title: 'The Road Ahead',
-readingStatus: true
+var library = [
+  { 
+    author: "Bill Gates", 
+    title: "The Road Ahead", 
+    readingStatus: true 
+  },
+  { 
+    author: "Steve Jobs", 
+    title: "Walter Isaacson", 
+    readingStatus: true 
+  },
+  {
+    author: "Suzanne Collins",
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    readingStatus: false,
+  },
+];
+
+for(element=0;element<library.length;element++){
+  var info = library[element].title + 'written by' + library[element].author
+  if(library[element].readingStatus){
+    console.log('Status: Read'+'\nBook Details= '+ info );
+  }
+  else{
+    console.log('Status: Not Read'+'\nBook Details= '+ info );
+  }
 };
 
-let book2 = {
-author: 'Steve Jobs',
-title: 'Walter Isaacson',
-readingStatus: true
-};
-
-let book3 = {
-author: 'Suzanne Collins',
-title: 'Mockingjay: The Final Book of The Hunger Games',
-readingStatus: false
-};
-
-console.log('reading status of book 1 is' , book1.title , "," , book1.author , "," , book1.readingStatus);
-console.log('reading status of book 2 is' , book2.title , "," , book2.author , "," , book2.readingStatus);
-console.log('reading status of book 3 is' , book3.title , "," , book3.author , "," , book3.readingStatus);
+// for (var i = 0; i < library.length; i++) 
+//    {
+//     var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
+//     if (library[i].readingStatus) {
+//       console.log("Already read " + book);
+//     } else
+//     {
+//      console.log("You still need to read " + book);
+//     }
+//    }
