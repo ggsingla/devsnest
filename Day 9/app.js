@@ -13,20 +13,22 @@ var partialunchecked = range(91, 100);
 
 
 // console.log(unchecked);
-var op=range(41,50);
+var rng=range(41,50);
 
-var unchecked=partialunchecked.concat(op);
+var unchecked=partialunchecked.concat(rng);
+
+const skipped = [15, 16, 25, 26,35,36,41,42,43,44,45,46,47,48,49,50,55,56,65,66,75,76,85,86]
 
 for(var x=85;x>=15;x=x-10)
 {
     if(x!=45){
-    op=range(x,x+1);
-    unchecked=unchecked.concat(op);
+    rng=range(x,x+1);
+    unchecked=unchecked.concat(rng);
     }
 }
 console.log(unchecked);
-// var op=range(41,50);
-// unchecked=unchecked.concat(op);
+// var rng=range(41,50);
+// unchecked=unchecked.concat(rng);
 // console.log(unchecked);
 
 const exitdoor = ['92','99']
