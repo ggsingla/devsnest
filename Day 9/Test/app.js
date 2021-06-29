@@ -32,7 +32,8 @@ console.log(unchecked);
 const exitdoor = ['92','99']
 
 const frame = document.querySelector(".frame")
-var count =0;
+var count = 0;
+
 for( i = 1; i<=100;u=i++){
     let box = document.createElement('div')
     box.setAttribute('class', 'box')
